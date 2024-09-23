@@ -1,6 +1,6 @@
 def summator(data_structure):
     counter = 0
-    if isinstance(data_structure, (list, tuple)):
+    if isinstance(data_structure, (list, tuple, set)):
         for i in data_structure:
             counter += summator(i)
     elif isinstance(data_structure, dict):
